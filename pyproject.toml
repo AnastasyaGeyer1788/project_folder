@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vacancy-parser"
+version = "0.1.0"
+description = "Парсер вакансий с hh.ru"
+dependencies = [
+    "requests>=2.28.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.flake8]
+max-line-length = 120
+exclude = [
+    ".venv/",
+    "venv/",
+    "env/",
+    ".git/",
+    "__pycache__/",
+    "*.pyc",
+    "build/",
+    "dist/",
+    ".eggs/",
+    "htmlcov/",
+    ".tox/",
+    ".pytest_cache/"
+]
