@@ -96,3 +96,6 @@ pytest --cov=src --cov-report=term-missing
 # HTML отчет
 pytest --cov=src --cov-report=html
 ```
+
+## Лицензия
+Проект создан в учебных целях и не подлежит лицензированию
